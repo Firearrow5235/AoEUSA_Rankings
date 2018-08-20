@@ -1,8 +1,6 @@
 const request = require('request');
 const cheerio = require('cheerio');
 
-//crude user 'db' just for test purposes
-const user_db = require('./user_db');
 
 var last_match_id = '#18263811';
 var curr_opponent = "ArtOfTheTroll";

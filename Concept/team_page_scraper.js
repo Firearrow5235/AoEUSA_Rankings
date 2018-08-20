@@ -1,4 +1,3 @@
-const db = require('quick.db');
 const rp = require('request-promise');
 const cheerio = require('cheerio');
 const options = {
