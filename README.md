@@ -1,1 +1,1 @@
-AoE2 Customer Rankings
+AoE2 USA Player Rankings
