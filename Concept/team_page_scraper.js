@@ -19,20 +19,14 @@ rp(options)
         var user_id = userid.substring(n + 1);
         var username = $(this).text();
         
-        //db.set(`userId_${user_id}`, {id: i + 1, _userid: user_id, _username: username, _rating: null, _lastmatch: null, _createdAt: Date(), _updatedAt: Date()});
         
+        //this is where we add the USA Player data to the Database
         fakeDb.push({id: i + 1, _userid: user_id, _username: username, _rating: null, _lastmatch: null, _createdAt: Date(), _updatedAt: Date()});
-        //console.log(userData[i]);
-    });
     
-    /*
-    db.fetchAll().then(i => {
-      console.log(i);
     });
-    */
-    
+
     console.log(fakeDb);
-    
+
     
   })
   .catch((err) => {
