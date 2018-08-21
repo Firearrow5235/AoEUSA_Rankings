@@ -1,6 +1,7 @@
 //just starting the stock server for now
 
 const http = require("http");
+const router = require("./router");
 
 http.createServer(function (req, res) {
     // body...
