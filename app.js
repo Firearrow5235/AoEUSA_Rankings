@@ -1,9 +1,14 @@
-const http = require("http");
-var scraper = require("./scraper");
+var express = require('express');
+var app = new express();
+var router = require("./router");
 
 
-http.createServer(function (req, res) {
-    scraper.scrapeit('https://usa.voobly.com');
-}).listen(process.env.PORT || 8080, process.env.IP || "0.0.0.0", () => {
-    console.log("server running");
-});
+//set up static path for our css
+app.use("/css", express.static(__dirname + "/css"));
+
+app.route('/')
+    .get(function(req, res){
+        router.tableData(req, res);
+    });
+
+app.listen(process.env.PORT);
