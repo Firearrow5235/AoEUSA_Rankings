@@ -2,7 +2,13 @@
   "name": "usa_rankings",
   "version": "8.11.4",
   "description": "An app for ranking AoE2 members of Team USA.",
-  "main": "index.js",
+  "main": "app.js",
+   "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "nodejs-latest": "^1.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
